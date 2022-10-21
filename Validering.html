@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validate form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <form id="validation" class="validation-form">
+
+      <div class="headline">
+        <h1>Register a new user</h1>
+      </div>
+      <div class="form-content">
+
+        <div class="input-group">
+          <label for="firstName" class="form-label">First Name <span>*</span></label>
+          <input type="text" class="form-control" id="firstName">
+          <div class="invalid-feedback">please enter a valid name</div>
+        </div>
+        <div class="input-group">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName">
+          <div class="invalid-feedback">please enter a valid name</div>
+        </div>
+        
+        <div class="input-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+          <div class="invalid-feedback">please enter a valid email</div>
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control">
+          <div class="invalid-feedback">please enter a valid password</div>
+        </div>
+
+        <div class="input-group">
+          <label for="repeatPassword" class="form-label">Repeat Password</label>
+          <input type="password" id="repeatPassword" class="form-control">
+          <div class="invalid-feedback">please enter a matching password</div>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" id="terms" class="">
+          <label for="terms">Accept the terms</label>
+          <div class="invalid-feedback">you need to accept the terms</div>
+        </div>
+
+
+        <div>
+          <button id="btn" class="btn">Register</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
